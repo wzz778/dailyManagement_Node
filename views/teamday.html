@@ -1,0 +1,48 @@
+{{extend './layout.html'}}
+{{block 'title'}}团队日常{{/block}}
+{{block 'head'}}
+<link rel="stylesheet" href="public/css/teamday.css">
+{{/block}}
+{{block 'body'}}
+<div class="functions" id="team">
+    <div class="team_top">
+        <button class="team_t_b" id="team_add" onclick="add()"><i class="fa fa-plus-square-o" aria-hidden="true"></i>添加签到</button>
+        <button class="team_t_b" id="team_delete" ><i class="fa fa-minus-square-o" aria-hidden="true"></i>批量删除</button>
+        <div>
+            <input type="text" class="team_find_input" placeholder=" 请输入您要寻找的用户名">
+            <a href="javascript:;" class="team_find_bon" onclick="teamfind()"><i class="fa fa-search" aria-hidden="true"></i>搜索</a>
+        </div>
+    </div>
+    <table class="team_main">
+        <thead> 
+            <tr class="tmt">
+                <th class="ms"><input type="checkbox" onchange="s()" name="team_all" value="all"></th>
+                <th class="ms">用户名</th>
+                <th class="ml">开始时间</th>
+                <th class="ml">结束时间</th>
+                <th class="ml">学习时间(min)</th>
+                <th class="ml" style="display:none;">操作码</th>
+                <th class="ml">操作</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+    </table>
+    <div class="team_b">
+        <span>前往第 <input oninput="teamchangepage()" id="teampage" autocomplete="off" value="1" min="1" max="10" style="height: 22px;width: 35px;margin: 0;" type="number" name="page"> 页</span>
+        <a href="javascript:;"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="javascript:;" style="background-color:#2a4e75;color: white;">1</a>
+        <a href="javascript:;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <span id="page_number"></span>
+    </div>
+    <div class="team_back_max">
+        <button onclick="backpagen1()" class="team_back">返回全局查找 . . .</button>
+    </div>
+</div>
+{{/block}}
+{{block 'bottom'}}
+<script src="public/js/teamday.js"></script>
+{{/block}}

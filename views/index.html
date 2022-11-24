@@ -1,0 +1,49 @@
+{{extend './layout.html'}}
+{{block 'title'}}个人中心{{/block}}
+{{block 'head'}}
+<link rel="stylesheet" href="public/css/index.css">
+{{/block}}
+{{block 'body'}}
+<a href="myday" class="team_t_b" id="team_add" >快去签到</a>
+<div class="me-show">
+    <div id="ms-top">个人信息</div>
+    <img id="usershead" src="">
+    <div class="message"><i class="fa fa-id-card-o" aria-hidden="true"></i>用户昵称:<span class="getmessage"></span></div>
+    <div class="message"><i class="fa fa-user" aria-hidden="true"></i>方向：<span class="getmessage"></span></div>
+    <div class="message"><i class="fa fa-user-circle-o" aria-hidden="true"></i>班级：<span class="getmessage"></span></div>
+    <div class="message"><i class="fa fa-envelope-open-o" aria-hidden="true"></i>邮箱：<span class="getmessage"></span></div>
+    <div class="message" style="height: 40px;display: none;"><span class="getmessage">身份</span></div>
+</div>
+<div class="me_revise">
+    <div id="mr-top">个人资料</div>
+    <div class="changeHead" style="background-image: url();">
+        <input type="file" accept=".png,.jpg,.jpeg,image/png,image/jpg,image/jpeg" id="file" name="image" size="50" onchange="upimg()">
+    </div>
+    <div class="mr_b">
+        <span>用户昵称:</span>
+        <input type="text" class="mr_input" name="id" id="" value="">
+    </div>
+    <div class="mr_b">
+        <span >方向:</span>
+        <input type="radio" class="to" name="to" value="0" >前端
+        <input type="radio" class="to" name="to" value="1">后端
+    </div>
+    <div class="mr_b">
+        <span>班级:</span>
+        <input type="text" class="mr_input" name="id" id="" value="">
+    </div>
+    <div class="mr_b">
+        <span>邮箱:</span>
+        <input type="text" class="mr_input" name="id" id="" value="">
+    </div>
+    <div class="mr_b" style="display: none;">
+        <span>操作码:</span>
+        <input type="text" class="mr_input" name="id" id="" value="">
+    </div>
+    <button id="mr_b" onclick="upmessage()">保存信息</button>
+    <a href="javascript:;" id="end_land" onclick="outland()">退出登录</a>
+</div>
+{{/block}}
+{{block 'bottom'}}
+<script src="public/js/upmessage.js"></script>
+{{/block}}

@@ -1,0 +1,95 @@
+#team{
+    width: 98%;
+    background-color: white;
+    padding-top: 5px;
+    .team_top{
+        width: 100%;
+        padding:10px 25px;
+        height: 50px;
+        display: flex;
+        background-color: white;
+        border-bottom: solid 2px #15283C;
+        font-size: 20px;
+        color: #da4633;
+        line-height: 20px;
+        i{
+            padding: 0 10px;
+        }
+    }
+    .team_main{
+        margin: 10px;
+        width: 100%;
+        min-height: 450px;
+        font-size: 15px;
+        tr{
+            padding: 10px;
+            width: 98%;
+            height: 40px;
+            display: flex;
+            border-bottom:1px #DFE6EC solid;
+            &:hover{
+                background-color: #e8eaf0;
+            }
+        }
+        .tmt{
+            background-color: #F8F8F9;
+            &:hover{
+                background-color: #F8F8F9;
+            }
+        }
+        .ms{
+            width: 15%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .ml{
+            width: 20%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        th{
+            color: gray;
+            width:20%;
+        }
+        td{
+            text-align: center;
+            width: 0px;
+            color: rgb(155, 155, 155);
+            a{
+                color: #5889bd;
+                &:hover{
+                    color: #62a4eb;
+                }
+                i{
+                    padding: 0 3px;
+                }
+            }
+        }
+        input{
+            width: 50px;
+        }
+    }
+    .team_back_max{
+        margin-top:10px ;
+        width: 1000px;
+        overflow: hidden;
+        display: none;
+        button{
+            float: right;
+            color: #5a5e66;
+            border: none;
+            padding: 7px 14px;
+            font-size: 15px;
+            background-color: white;
+            cursor: pointer;
+            &:hover{
+                color:#1890FF;
+            }
+        }
+    }
+}
+.sorta{
+    font-family: 'sthupo';
+}

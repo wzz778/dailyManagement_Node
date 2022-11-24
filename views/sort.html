@@ -1,0 +1,32 @@
+{{extend './layout.html'}}
+{{block 'title'}}用户日常{{/block}}
+{{block 'head'}}
+<link rel="stylesheet" href="public/css/sort.css">
+{{/block}}
+{{block 'body'}}
+<div class="functions" id="team">
+    <div class="team_top">
+        <i class="fa fa-fire" aria-hidden="true"></i> 
+        学习时长大排行：
+    </div>
+    <table class="team_main">
+        <thead> 
+            <tr class="tmt">
+                <th class="ml" >排行</th>
+                <th class="ml">用户名</th>
+                <th class="ml">方向</th>
+                <th class="ml">班级</th>
+                <th class="ml">学习总时长(min)</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+{{/block}}
+{{block 'bottom'}}
+<script src="public/js/sort.js"></script>
+{{/block}}

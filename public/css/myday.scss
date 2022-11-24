@@ -1,0 +1,189 @@
+#team{
+    width: 98%;
+    background-color: white;
+    padding-top: 5px;
+    position: relative;
+    #team_add{
+        position: fixed;
+        width: 70px;
+        height: 70px;
+        padding: 10px 10px;
+        font-size: 15px;
+        top: 70vh;
+        right: 2vh;
+        cursor: pointer;
+        border-radius: 100px;
+        background-color: #15283C;
+        color:#E8F4FF;
+        border: #15283C 1px solid;
+        i{
+            padding-right: 5px;
+        }
+        &:hover{
+        background-color: #39516b;
+        color: white;
+        }
+    }
+    .team_top{
+        width: 100%;
+        padding:10px 25px;
+        height: 60px;
+        display: flex;
+        flex-direction: row-reverse;
+        background-color: white;
+        border-bottom: solid 2px #15283C;
+        button{
+            height: 35px;
+            padding: 3px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            margin-right:10px;
+            border-radius: 10px;
+            &:hover{
+                color: white;
+            }
+        }
+        #team_delete{
+            margin-right: 30px;
+            opacity: .8;
+            background-color: #FFEDED;
+            color:#ec4c4c;
+            border: #e9a4a4 1px solid;
+            &:hover{
+            background-color: #ec4c4c;
+            color:white;
+            }
+        }
+        div{
+            border-radius: 15px;
+            height:40px;
+            display: flex;
+            span{
+                font-size: 20px;
+                color: #4d8ed4;
+                padding: 0 10px;
+            }
+        }
+    }
+    .team_main{
+        margin: 10px;
+        width: 100%;
+        min-height: 450px;
+        font-size: 15px;
+        tr{
+            padding: 10px;
+            width: 98%;
+            height: 40px;
+            display: flex;
+            border-bottom:1px #DFE6EC solid;
+            &:hover{
+                background-color: #e8eaf0;
+            }
+        }
+        .tmt{
+            background-color: #F8F8F9;
+            &:hover{
+                background-color: #F8F8F9;
+            }
+        }
+        .ms{
+            width: 15%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .ml{
+            width: 20%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        th{
+            color: gray;
+            width:20%;
+        }
+        td{
+            text-align: center;
+            width: 0px;
+            color: rgb(155, 155, 155);
+            a{
+                color: #5889bd;
+                &:hover{
+                    color: #62a4eb;
+                }
+                i{
+                    padding: 0 3px;
+                }
+            }
+        }
+        input{
+            width: 50px;
+        }
+    }
+    .team_back_max{
+        margin-top:10px ;
+        width: 1000px;
+        overflow: hidden;
+        display: none;
+        button{
+            float: right;
+            color: #5a5e66;
+            border: none;
+            padding: 7px 14px;
+            font-size: 15px;
+            background-color: white;
+            cursor: pointer;
+            &:hover{
+                color:#1890FF;
+            }
+        }
+    }
+    .team_b{
+        color: rgb(92, 90, 90);
+        padding-right: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction:row-reverse;
+        font-size: 15px;
+        input{
+            border:1.5px solid #2a4e75;
+            border-radius: 8px;
+            font-size: 17px;
+            padding: 5px 6px;
+            height: 40px;
+        }
+        span{
+            line-height: 30px;
+        }
+        a{
+            width: 30px;
+            height: 30px;
+            display: block;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 5px;
+            color: #77787c;
+            margin: 0 10px;
+            background-color: gainsboro;
+            &:hover{
+                background-color:#15283C;
+                color: white;
+            }
+            span{
+                margin: 0 10px;
+                display: block;
+            };
+            input{
+                border: 1px #DFE6EC solid;
+                border-radius: 5px;
+            };
+        }
+    }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number']{
+    -moz-appearance: textfield;
+}

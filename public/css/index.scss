@@ -1,0 +1,163 @@
+.me-show{
+    margin-top: 30px;
+    display: float;
+    float: left;
+    width: 30%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgb(177, 174, 174) 0px 0px 6px;
+        img{
+            width: 20%;
+            height: 20%;
+            border-radius: 100px;
+            margin-left: 40%;
+            margin-bottom: 5px;
+            box-shadow: rgb(179, 179, 179) 0px 0px 6px;
+        }
+        div{
+            width: 100%;
+            font-size: 15px;
+            border-bottom: rgb(199, 197, 197) 1px solid;
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+            position: relative;
+            i{
+                color: #325881;
+                padding: 0 5px;
+            }
+        }
+        #ms-top{
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+        }
+        span{
+            position: absolute;
+            right: 10px;
+            color:#606266; 
+        }
+}
+.me_revise{
+    margin-top: 30px;
+    margin-left: 3%;
+    width: 60%;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgb(177, 174, 174) 0px 0px 6px;
+    padding: 15px;
+    display: float;
+    float: left;
+    position: relative;
+    .changeHead{
+        margin-left: 80px;
+        width: 70px;
+        height: 70px;
+        border-radius: 70px;
+        // background-image: url(/public/img/userHead.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        // #changeHeadimg{
+        //     position:absolute;
+        //     width: 70px;
+        //     height: 70px;
+        // }
+        #file{
+            top: 56px;
+            position:absolute;
+            width:70px;
+            height: 70px;
+            background-color:white;
+            opacity:0;
+            z-index: 100;
+            cursor: pointer;
+        }
+    }
+    #mr-top{
+        font-size: 20px;
+        font-weight: 500;
+        border-bottom: rgb(206, 205, 205) 1px solid;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .mr_b{
+        height: 40px;
+        padding: 5px;
+        display: flex;
+        line-height: 40px;
+        margin: 10px 0;
+        span{
+            width: 80px;
+            height: 40px;
+            line-height: 40px;
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            color: #515255;
+        }
+        .mr_input{
+            height: 36px;
+            width: 80%;
+            padding: 6px 12px;
+            font-size: 15px;
+            color: #7d7f85;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .to{
+            width: 16px;
+            margin-left: 20px;
+            height: 42px;
+        }
+    }
+    @mixin but {
+        padding: 7px 20px;
+        font-size: 14px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+    }
+    button{
+        margin: 10px 0 0 80px;
+        background-color: #325881;
+        @include but;
+    }
+    #mr_b{
+        background-color:#325881;
+        &:hover{
+            background-color:#609fe3;
+        }
+    }
+    #end_land{
+        margin: 10px 0 0 50px;
+        background-color: rgb(255, 79, 79);
+        &:hover{
+            background-color:rgb(207, 11, 11);
+        }
+        @include but;
+    }
+}
+#team_add{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 15px;
+    top: 70vh;
+    right: 2vh;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: #15283C;
+    color:#E8F4FF;
+    border: #15283C 1px solid;
+    i{
+        padding-right: 5px;
+    }
+    &:hover{
+    background-color: #39516b;
+    color: white;
+    }
+}

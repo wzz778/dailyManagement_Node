@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="public/css/login.css">
+    <link rel="stylesheet" href="public/css/sweetalert.css">
+</head>
+<body>
+    <div class="materialContainer">
+        <div class="box">
+            <div class="title">登录</div>
+            <!-- <form method="post" action="/api/login" id="login"> -->
+                <div class="input">
+                    <label for="name">用户名</label>
+                    <input type="text" name="username"  id="name">
+                    <span class="spin"></span>
+                </div>
+                <div class="input">
+                    <label for="pass">密码</label>
+                    <input type="password" name="password" id="pass">
+                    <span class="spin"></span>
+                </div>
+                <div class="button login">
+                    <button type="submit" onclick="login()">
+                        <span>登录</span>
+                        <i class="fa fa-check"></i>
+                    </button>
+                </div>
+            <!-- </form> -->
+        </div>
+        <div class="overbox">
+            <div class="material-button alt-2">
+                <span class="shape"></span>
+            </div>
+            <div class="title">注册</div>
+            <div class="input">
+                <label for="regname">用户名</label>
+                <input type="text" name="regname" id="regname">
+                <span class="spin"></span>
+            </div>
+            <div class="input">
+                <label for="regpass">密码</label>
+                <input type="password" name="regpass" id="regpass">
+                <span class="spin"></span>
+            </div>
+            <div class="input">
+                <label for="reregpass">邮箱</label>
+                <input type="text" name="reregpass" id="reregpass">
+                <span class="spin"></span>
+            </div>
+            <div class="input" id="code-max">
+                <label for="code">验证码</label>
+                <input type="text" name="code" id="code">
+                <button onclick="getcode()">获取验证码</button>
+                <span class="spin"></span>
+            </div>
+            <div class="button">
+                <button onclick="reg()">
+                    <span>注册</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="/public/js/sweetalert-dev.js"></script>
+<script src="public/js/loginstyle.js"></script>
+<script src="public/js/login.js"></script>
+</html>

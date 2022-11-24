@@ -1,0 +1,180 @@
+.me-show {
+  margin-top: 30px;
+  display: float;
+  float: left;
+  width: 30%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: #b1aeae 0px 0px 6px;
+}
+
+.me-show img {
+  width: 20%;
+  height: 20%;
+  border-radius: 100px;
+  margin-left: 40%;
+  margin-bottom: 5px;
+  box-shadow: #b3b3b3 0px 0px 6px;
+}
+
+.me-show div {
+  width: 100%;
+  font-size: 15px;
+  border-bottom: #c7c5c5 1px solid;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.me-show div i {
+  color: #325881;
+  padding: 0 5px;
+}
+
+.me-show #ms-top {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.me-show span {
+  position: absolute;
+  right: 10px;
+  color: #606266;
+}
+
+.me_revise {
+  margin-top: 30px;
+  margin-left: 3%;
+  width: 60%;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: #b1aeae 0px 0px 6px;
+  padding: 15px;
+  display: float;
+  float: left;
+  position: relative;
+}
+
+.me_revise .changeHead {
+  margin-left: 80px;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.me_revise .changeHead #file {
+  top: 56px;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  opacity: 0;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.me_revise #mr-top {
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: #cecdcd 1px solid;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.me_revise .mr_b {
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  line-height: 40px;
+  margin: 10px 0;
+}
+
+.me_revise .mr_b span {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #515255;
+}
+
+.me_revise .mr_b .mr_input {
+  height: 36px;
+  width: 80%;
+  padding: 6px 12px;
+  font-size: 15px;
+  color: #7d7f85;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.me_revise .mr_b .to {
+  width: 16px;
+  margin-left: 20px;
+  height: 42px;
+}
+
+.me_revise button {
+  margin: 10px 0 0 80px;
+  background-color: #325881;
+  padding: 7px 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.me_revise #mr_b {
+  background-color: #325881;
+}
+
+.me_revise #mr_b:hover {
+  background-color: #609fe3;
+}
+
+.me_revise #end_land {
+  margin: 10px 0 0 50px;
+  background-color: #ff4f4f;
+  padding: 7px 20px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.me_revise #end_land:hover {
+  background-color: #cf0b0b;
+}
+
+#team_add {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 15px;
+  top: 70vh;
+  right: 2vh;
+  cursor: pointer;
+  border-radius: 100px;
+  background-color: #15283C;
+  color: #E8F4FF;
+  border: #15283C 1px solid;
+}
+
+#team_add i {
+  padding-right: 5px;
+}
+
+#team_add:hover {
+  background-color: #39516b;
+  color: white;
+}

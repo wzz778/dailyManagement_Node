@@ -1,0 +1,16 @@
+<div id="head" class="head1">
+    <button type="button" id="sidebarCollapse" class="sidebar_toggle" onclick="slow()"><i class="fa fa-bars"></i></button>
+    <img id="logo" src="/public/img/relogo.png" alt="">
+    {{ if user}}
+        <div id="head-cord" onclick="dropdown()">
+            <img class="userhead" src="{{user.head}}" alt="">
+            <div class="username">{{user.username}}</div>
+            <div id="head-cord-fade">
+                <a class="dropdown-item" href="index">个人中心</a>
+                <a class="dropdown-item" href="myday">签到中心</a>
+                <a class="dropdown-item" href="teamday">团队日常</a>
+                <a class="dropdown-item" href="#" onclick="outland()"><span>退出登录</span> <i class="fa fa-sign-out"></i></a>
+            </div>
+        </div>
+    {{/if}}
+</div>

@@ -1,0 +1,27 @@
+<div id="nav" class="nav1">
+    <div id="small-cord">
+        {{if user}}
+        <span id="work">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i> :
+            {{if user.status==0}}
+                成员
+                {{else}}
+                管理员
+            {{/if}}
+        </span>
+        <img class="userhead" src="{{user.head}}" alt="">
+        <div>
+            <span class="column_span username">{{user.username}}</span>
+        </div>
+        {{else}}
+            未登录
+        {{/if}}
+    </div>
+    <div class="column">
+        <a href="index" class="column_a"><i  class="fa fa-user" aria-hidden="true"></i><span class="column_span">个人中心</span></a>
+        <a href="myday" class="column_a"><i class="fa  fa-sign-in" aria-hidden="true"></i><span class="column_span">用户日常</span></a>
+        <a href="teamday" class="column_a"><i class="fa fa-users" aria-hidden="true"></i><span class="column_span">团队日常</span></a>
+        <a href="javascript:;" onclick="noteam()" class="column_a"><i  class="fa fa-steam-square" aria-hidden="true"></i><span class="column_span">团队管理</span></a>
+        <a href="sort" class="column_a"><i class="fa fa-sort-amount-desc" aria-hidden="true"></i><span class="column_span">学习排行</span></a>
+    </div>
+</div>

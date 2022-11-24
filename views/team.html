@@ -1,0 +1,76 @@
+{{extend './layout.html'}}
+{{block 'title'}}团队管理{{/block}}
+{{block 'head'}}
+<link rel="stylesheet" href="public/css/team.css">
+{{/block}}
+{{block 'body'}}
+<div id="backfade">
+    <div class="team_fade">
+        <button class="fade">×</button>
+        <div id="register_main">
+            <span style="color: #3d6085;font-size: 20px;font-weight: 500;">用户添加栏目</span>
+            <div id="input_land">
+                用户名：<input type="text" class="registerinput inputs" placeholder="请输入您要添加的用户名"></br>
+                密码：<input type="text" style="margin-left: 14px;" class="registerinput inputs" placeholder="请输入您要添加的密码"></br>
+                邮箱：<input type="text" class="registerinput inputs" style="margin-left: 14px;" placeholder="邮箱">
+            </div>
+            <button id="add_number" onclick="adduser()">添加</button>
+        </div>
+    </div>
+    <div class="team_fade">
+        <button class="fade">×</button>
+        <div id="team_revise">
+            <span style="color: #3d6085;font-size: 20px;font-weight: 500;">用户修改栏目</span>
+            <div id="input_r">
+                用户名：<input type="text" class="team_reivse_input inputs" placeholder="请输入您要修改的ID"></br>
+                邮箱：<input style="margin-left: 14px;" type="text" class="team_reivse_input inputs" placeholder="请输入您要修改的年龄"></br>
+                班级：<input style="margin-left: 14px;" type="text" class="team_reivse_input inputs" placeholder="请输入您要修改的年龄"></br>
+                方向：<input type="radio" class="team_sex" name="team_sex" value="男">前端
+                <input type="radio" class="team_sex" name="team_sex" value="女">后端
+            </div>
+            <button id="team_revise_b">修改</button>
+        </div>
+    </div>
+</div>
+<div class="functions" id="team">
+    <div class="team_top">
+        <button class="team_t_b" id="team_delete" ><i class="fa fa-minus-square-o" aria-hidden="true"></i>批量删除</button>
+        <button class="team_t_b" id="team_add"><i class="fa fa-plus-square-o" aria-hidden="true"></i>添加用户</button>
+        <div>
+            <input type="text" class="team_find_input" placeholder=" 请输入您要寻找的用户名">
+            <a href="javascript:;" class="team_find_bon" onclick="teamfind()"><i class="fa fa-search" aria-hidden="true"></i>搜索</a>
+        </div>
+    </div>
+    <table class="team_main">
+        <thead> 
+            <tr class="tmt">
+                <th class="ms"><input type="checkbox" onchange="s()" name="team_all" value="all"></th>
+                <th class="ms">用户名</th>
+                <th class="ms">班级</th>
+                <th class="ms">方向</th>
+                <th class="ml">邮箱</th>
+                <th class="ml" style="display:none;">操作码</th>
+                <th class="ml">操作</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+    </table>
+    <div class="team_b">
+        <span>前往第 <input oninput="teamchangepage()" id="teampage" autocomplete="off" value="1" min="1" max="10" style="height: 22px;width: 35px;margin: 0;" type="number" name="page"> 页</span>
+        <a href="javascript:;"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+        <a href="javascript:;" style="background-color:#2a4e75;color: white;">1</a>
+        <a href="javascript:;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <span id="page_number"></span>
+    </div>
+    <div class="team_back_max">
+        <button onclick="backpagen1()" class="team_back">返回全局查找 . . .</button>
+    </div>
+</div>
+{{/block}}
+{{block 'bottom'}}
+<script src="public/js/team.js"></script>
+{{/block}}
